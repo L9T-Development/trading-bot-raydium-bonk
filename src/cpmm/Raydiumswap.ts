@@ -112,53 +112,6 @@ export const getAmountOut = async (inputAmount: BN, baseIn: boolean, rpcData: Cp
   )
 };
 
-// export const makeSwapTransaction = async (
-//   poolInfo: any,
-//   poolKeys: any,
-//   baseIn: any,
-//   slippage: any,
-//   swapResult: any,
-//   raydium: Raydium,
-//   latestBlockhash: BlockhashWithExpiryBlockHeight,
-//   signers: Array<Keypair>,                                               // Array<Signer>: the correct datatype
-//   connection: Connection,
-//   payer: Keypair,
-//   jitoFee: string,
-// ) => {
-//   const provider = payer.publicKey;
-//   const { transaction } = await raydium.cpmm.swap<TxVersion.V0>({
-//     poolInfo,
-//     poolKeys,
-//     payer: provider,
-//     baseIn,
-//     slippage,
-//     swapResult,
-//     // txVersion: TxVersion.LEGACY
-//   });
-
-//   // transaction.feePayer = provider;
-//   transaction.recentBlockhash = latestBlockhash.blockhash;
-//   if (signers.length > 0) {
-//     // transaction.add(
-//     //   SystemProgram.createAccount({
-//     //     fromPubkey: payer.publicKey,
-//     //     newAccountPubkey: payer.publicKey,
-//     //     space: MINT_SIZE,
-//     //     lamports: 1,
-//     //     programId: TOKEN_PROGRAM_ID
-//     //   })
-//     // )
-
-//     // transaction.sign(...signers);
-//     // transaction.addSignature(provider, Buffer.from(payer.secretKey));
-//   } else {
-//     throw new Error("No signers provided for the transaction.");
-//   }
-//   console.log("===========TRNASACTION SIGNATURE==============", transaction.signatures);
-//   return transaction;
-// };
-
-
 export const makeSwapTransaction = async (
   raydium: Raydium,
   poolInfo: ApiV3PoolInfoStandardItemCpmm,
@@ -175,12 +128,7 @@ export const makeSwapTransaction = async (
     baseIn,
     slippage,
     swapResult,
-    // config.bypassAssociatedCheck,
-    // config.checkCreateATAOwner,
-    // config.associatedOnly,
-    // computeBudgetConfig,
   });
-  // transaction.serialize()
   const { signedTx } = await execute();
   let transaction1 = signedTx;
   return transaction as VersionedTransaction
