@@ -1,7 +1,8 @@
 # Trading Bot - Raydium CPMM
 
 ## Overview
-  
+
+  This bot can launch token with multi-keypair on raydium cpmm pool like [IMG](https://dexscreener.com/search?q=znv3FZt2HFAvzYf5LxzVyryh3mBXWuTRRng25gEZAjh)
   This repository contains a Solana trading bot designed to operate in Raydium CPMM Pools. The bot implements several advanced features such as:
   
   - Volume Boost: Enhancing trading volumes within the pool.
@@ -26,6 +27,16 @@
   - Optimize and combine multiple trades into fewer transactions for efficiency.
   4. Wallet Scanning
   - Detect activity in specific wallets and trigger automated trading responses.
+
+## Sample token (launch token for several key pair with one token mint)
+
+- IMG - token mint: `znv3FZt2HFAvzYf5LxzVyryh3mBXWuTRRng25gEZAjh`
+
+  <a href="https://ibb.co/Z1YcMvm7"><img src="https://i.ibb.co/Z1YcMvm7/img.png" alt="img" border="0"></a>
+
+- SOLMAX - token mint: `FEhfph34VeoCfkuiNnv89pEGPiGPukWfhrKtLko66mvj`
+
+  <a href="https://ibb.co/PvQ202Cj"><img src="https://i.ibb.co/PvQ202Cj/123.png" alt="123" border="0"></a>
 
 ## Usage
 
