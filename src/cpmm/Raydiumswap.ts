@@ -55,10 +55,11 @@ import { MINT_SIZE, TOKEN_PROGRAM_ID } from '@solana/spl-token';
 import InstructionNamespaceFactory from '@project-serum/anchor/dist/cjs/program/namespace/instruction';
 import { sign } from 'crypto';
 import { promises } from 'fs';
-const poolId = POOL_ADDRESS;
 
 
-const jitpTipAccounts = [
+// Constants at the top level
+const POOL_ID = POOL_ADDRESS;
+const JITP_TIP_ACCOUNTS = [
   'Cw8CFyM9FkoMi7K7Crf6HNQqf4uEMzpKw6QNghXLvLkY',
   'DttWaMuVvTiduZRnguLF7jNxTgiMBZ1hyAumKUiL2KRL',
   '96gYZGLnJYVFmbjzopPSU6QiEV5fGqZNyN9nmNhvrZU5',
@@ -69,8 +70,11 @@ const jitpTipAccounts = [
   'DfXygSm4jCyNCybVYYK6DwvWqjKee8pbDmJGcLWNDXjh',
 ];
 
-export const getRandomValidatorKey = (): PublicKey => {
-  const randomValidator = jitpTipAccounts[Math.floor(Math.random() * jitpTipAccounts.length)];
+/**
+ * Returns a random validator public key
+ */
+const getRandomValidatorKey = () => {
+  const randomValidator = JITP_TIP_ACCOUNTS[Math.floor(Math.random() * JITP_TIP_ACCOUNTS.length)];
   return new PublicKey(randomValidator);
 };
 
