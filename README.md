@@ -12,11 +12,7 @@
 
 ## Contact
   
-  If you need help, interest or need updated version, contact here: [Telegram](https://t.me/shiny0103) [Twitter](https://x.com/0xTan1319)
-
-## Video
-
-  - [cpmm token luunch and fee distribution to holders automatically every setted time](https://x.com/0xTan1319/status/1897293938974941441)
+  If you need help, interest or need updated version, contact here: [Telegram](https://t.me/shiny0103) | [Twitter](https://x.com/0xTan1319)
 
 ## Features
 
