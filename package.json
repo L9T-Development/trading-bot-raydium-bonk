@@ -1,5 +1,5 @@
 {
-  "name": "tradingbot",
+  "name": "bonk.fun trading bot- bundler, volume bot, sniper bot",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -17,9 +17,10 @@
   "keywords": [
     "solana",
     "trading",
-    "bot"
+    "bot",
+    "bonk.fun"
   ],
-  "author": "jsphantom",
+  "author": "0xTan1319",
   "license": "ISC",
   "dependencies": {
     "@ixjb94/indicators": "^1.2.2",
