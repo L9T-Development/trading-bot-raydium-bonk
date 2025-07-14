@@ -35,7 +35,7 @@ import {
   BUFFER,
 } from './config';
 
-import { getPoolInfo, getAmountOut, makeSwapTransaction, executeAndConfirm } from './cpmm/Raydiumswap';
+import { getPoolInfo, getAmountOut, makeSwapTransaction, executeAndConfirm } from './launchpad/Raydiumswap';
 import { executeAndConfirmByJito } from './jito-bundle';
 import { Raydium } from '@raydium-io/raydium-sdk-v2';
 import bs58 from 'bs58';
